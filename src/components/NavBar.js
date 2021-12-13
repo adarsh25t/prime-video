@@ -1,7 +1,22 @@
-import { Fragment } from "react";
+import { Fragment, useContext } from "react";
+import { useHistory ,Link} from "react-router-dom";
+import { authContext, firebaseContext } from "../store/context";
+
 import './NavBar.css';
 
 const Navbar = ()=>{
+
+    const {firebase} = useContext(firebaseContext);
+    const {userName} = useContext(authContext);
+    const history = useHistory()
+
+
+    const signoutHandler = ()=>{
+        firebase.auth().signOut();
+        history.push('/login')
+    }
+  const  logoutLogin = userName ?   <a class="dropdown-item" href="#" onClick={signoutHandler}>Logout</a> : 
+                                    <a href=""><Link to="/login" className="link">LogIn</Link></a>;
     return(
        <Fragment>
         <nav class="navbar navbar-expand-lg fixed-top">
@@ -28,9 +43,9 @@ const Navbar = ()=>{
                         </li>
                     </ul>
                     <div class="dropdown d-login">
-                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Welcome <span>ADARSH</span></a>
+                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">{userName ? `Welcome ${userName.displayName}` : "LogIn"}</a>
                         <ul class="dropdown-menu bg-light" aria-labelledby="dropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                            <li>{logoutLogin}</li>
                             <li><a class="dropdown-item" href="#">Profile</a></li>
                         </ul>
                     </div>

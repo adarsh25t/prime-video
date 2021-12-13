@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+import { Link } from "react-router-dom";
 import './BannerLogin.css'
 
 const BannerLogin = ()=>{
@@ -10,7 +11,7 @@ const BannerLogin = ()=>{
             <div className="banner-login-text">
                 <h3>Welcome to Prime Video</h3>
                 <p>Join Prime to watch the latest movies, TV shows and award-winning Amazon Originals</p>
-                <button>Sign in to join Prime</button>
+                <button><Link to="/register" className="link">Sign in to join Prime </Link></button>
             </div>
         </div>
     </Fragment> 
