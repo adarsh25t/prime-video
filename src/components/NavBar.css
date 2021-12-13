@@ -24,10 +24,16 @@
     color:#00A8E1;
 }
 .d-login .dropdown-toggle{
-    background-color: #00A8E1;
-    color: black;
+    color: white;
     font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+.d-login .dropdown-toggle img{
+    height: 40px;
+}
+
 a{
     text-decoration: none;
 }

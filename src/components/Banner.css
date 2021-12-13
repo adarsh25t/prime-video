@@ -1,0 +1,104 @@
+.carousel-inner img{
+    height: 100vh;
+    background-size: cover;
+}
+.carousel-inner{
+    position: relative;
+}
+.carousel-inner .carousel-caption{
+    top: 8rem;
+    text-align: start;
+    
+    
+}
+.carousel-caption h5{
+    font-size: 3rem;
+    z-index: 10001;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.carousel-caption p{
+    width: 70%;
+    text-align: start;
+    font-family: 'Poppins', sans-serif;
+}
+.fav-btn{
+    background: #00A8E1;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: 1s;
+}
+.fav-btn:hover{
+    background-color: crimson;
+}
+.wat-btn{
+    background: crimson;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    transition: 1s;
+}
+.wat-btn:hover{
+    background-color: #00A8E1;
+}
+
+.carousel-indicators button{
+    width: 1rem !important;
+    height: 1rem !important;
+    border-radius: 50% !important;
+    margin-left: 10px !important;
+    background-color: #00A8E1 !important;
+    
+}
+.carousel-indicators button.active{
+    background-color: crimson !important;
+}
+
+@media (max-width:768px){
+    .carousel-caption p{
+        width: 100%;
+        font-size: 15px;
+    }
+}
+
+@media (max-width:568px){
+    .carousel-caption h5{
+        font-size: 1.5rem;
+    }
+    .carousel-caption p{
+        width: 100%;
+        font-size: 13px;
+    }
+    .carousel-caption button{
+        padding: 5px 10px;
+    }
+    .carousel-indicators{
+        bottom: 150px;
+    }
+}
+
+@media (max-width:418px){
+    .carousel-indicators{
+        bottom: 150px;
+    }
+}
+
+@media (max-width:428px){
+    .carousel-caption h5{
+        font-size: 1.4rem;
+    }
+    .carousel-caption p{
+        width: 100%;
+        font-size: 11px;
+    }
+    .carousel-caption button{
+        padding: 5px 3px;
+    }
+    .carousel-indicators{
+        bottom: 50px;
+    }
+}

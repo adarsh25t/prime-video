@@ -15,8 +15,11 @@ const Navbar = ()=>{
         firebase.auth().signOut();
         history.push('/login')
     }
-  const  logoutLogin = userName ?   <a class="dropdown-item" href="#" onClick={signoutHandler}>Logout</a> : 
-                                    <a href=""><Link to="/login" className="link">LogIn</Link></a>;
+    const  logoutLogin = userName ?   <a class="dropdown-item" href="#" onClick={signoutHandler}>Logout</a> : 
+                                    <a href=""><Link to="/login" className="link">LogIn</Link></a>;   
+    
+    const userLogin =  userName ? <div><img src="https://m.media-amazon.com/images/G/02/CerberusPrimeVideo-FN38FSBD/adult-1.png" alt="" /> <span>{userName.displayName}</span></div>: "LogIn";                            
+                                    
     return(
        <Fragment>
         <nav class="navbar navbar-expand-lg fixed-top">
@@ -40,10 +43,11 @@ const Navbar = ()=>{
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Favorite</a>
+                            
                         </li>
                     </ul>
                     <div class="dropdown d-login">
-                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">{userName ? `Welcome ${userName.displayName}` : "LogIn"}</a>
+                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">{userLogin}</a>
                         <ul class="dropdown-menu bg-light" aria-labelledby="dropdownMenuLink">
                             <li>{logoutLogin}</li>
                             <li><a class="dropdown-item" href="#">Profile</a></li>
