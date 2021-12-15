@@ -19,7 +19,7 @@ const Banner = ()=>{
         setLoading(false);
     },[])
     
-
+   console.log(movie);
     return(
         <Fragment>
             {movie && !loading ? <BannerSlider movie={movie}/> : ""}

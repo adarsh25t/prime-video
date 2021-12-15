@@ -1,0 +1,89 @@
+.fav-btn{
+    padding: 17px 17px;
+    background: transparent;
+    border: 1px solid rgb(109, 108, 108);
+    border-radius: 50%;
+    color: red;
+    transition: 1s;
+    padding-left: 20px;
+}
+.fav-btn i{
+    font-size: 20px;
+    border: 1px solid rgb(109, 108, 108);
+    border-radius: 50%;
+    padding: 7px 7px;
+    transition: 1s;
+}
+.fav-btn:hover{
+    border-color: red;
+}
+.fav-btn:hover i{
+    border-color: red;
+}
+.play-text{
+    padding-left: 5px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+@media (max-width:941px){
+    .fav-btn{
+        padding: 12px 12px;
+    }
+    .fav-btn i{
+        font-size: 15px;
+    }
+    .play-text{
+        font-size: 13px;
+    }
+}
+@media (max-width:1024px){
+    .fav-btn{
+        padding: 17px 17px;
+        margin-top: 10px;
+    }
+    .fav-btn i{
+        font-size: 20px;
+    }
+    .play-text{
+        font-size: 22px;
+    }
+}
+@media (max-width:540px){
+    .fav-btn{
+        padding: 13px 13px;
+        margin-top: 10px;
+    }
+    .fav-btn i{
+        font-size: 15px;
+    }
+    .play-text{
+        font-size: 15px;
+    }
+}
+@media (max-width:360px){
+    .fav-btn{
+        padding: 10px 10px;
+        margin-top: 10px;
+    }
+    .fav-btn i{
+        font-size: 13px;
+    }
+    .play-text{
+        font-size: 13px;
+    }
+}
+@media (max-width:320px){
+    .fav-btn{
+        padding: 9px 9px;
+        margin-top: 9px;
+    }
+    .fav-btn i{
+        font-size: 10px;
+    }
+    .play-text{
+        font-size: 10px;
+    }
+}
