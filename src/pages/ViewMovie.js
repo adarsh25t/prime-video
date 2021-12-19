@@ -1,16 +1,14 @@
 import { useContext } from "react";
 import { Fragment } from "react";
+import Footer from "../components/Footer";
 import ViewFilm from "../components/ViewFilm";
-import { viewMovieContext } from "../store/movieContext";
-
 
 const ViewMovie = ()=>{
 
-    const {view} = useContext(viewMovieContext);
-    console.log(view);
     return(
         <Fragment>
             <ViewFilm/>
+            <Footer/>
         </Fragment>
     )
 }
