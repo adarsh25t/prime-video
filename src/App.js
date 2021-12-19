@@ -6,6 +6,9 @@ import Login from "./components/Login";
 import NavBar from './components/NavBar'
 import { authContext, firebaseContext } from "./store/context";
 import BannerLogin from "./components/BannerLogin";
+import Movie from "./pages/Movie";
+import TvShow from "./pages/TvShow";
+import ViewMovie from "./pages/ViewMovie";
 
 
 function App() {
@@ -35,6 +38,19 @@ function App() {
         <Route path="/login">
           <Login/>
         </Route>
+
+        <Route path="/movie">
+          <Movie/>
+        </Route>
+
+        <Route path="/tvshow">
+           <TvShow/>
+        </Route>
+
+        <Route path="/viewmovie">
+          <ViewMovie/>
+        </Route>
+
       </Router>
   </div>
   );

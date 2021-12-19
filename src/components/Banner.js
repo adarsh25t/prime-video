@@ -1,7 +1,7 @@
 import { Fragment ,useEffect,useState} from "react";
 import './Banner.css';
 import BannerSlider from "./BannerSlider";
-import { API_KEY, baseUrl ,IMG_URl} from "../store/movieData";
+import { API_KEY, baseUrl ,} from "../store/movieData";
 
 
 const Banner = ()=>{
@@ -19,7 +19,6 @@ const Banner = ()=>{
         setLoading(false);
     },[])
     
-   console.log(movie);
     return(
         <Fragment>
             {movie && !loading ? <BannerSlider movie={movie}/> : ""}

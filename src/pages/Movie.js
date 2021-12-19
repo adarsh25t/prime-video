@@ -1,20 +1,14 @@
-import { Fragment } from "react"
-import Banner from "../components/Banner";
+import { Fragment } from "react";
 import ListMovie from "../components/ListMovie";
-import WatchLaterMovies from "../components/WatchLaterMovies";
 import { ActionMovies,HorrorMovies,RomanceMovies,
-         ComedyMovies,Crime,Drama,Originals,Science_Fiction,Animation,
-         Fantasy,Thriller,War,Western,History,Music,Adventure } from "../store/movieData";
+    ComedyMovies,Crime,Drama,Originals,Science_Fiction,Animation,
+    Fantasy,Thriller,War,Western,History } from "../store/movieData";
 
 
-const Home = ()=>{
-   
-
+const Movie = ()=>{
     return(
         <Fragment>
-            <Banner/>
-            <WatchLaterMovies/>
-            <ListMovie URL={ActionMovies} title={"Recommended movies"}/>
+            <ListMovie URL={ActionMovies} title={"Action movies"}/>
             <ListMovie URL={Originals} title={"Amazon Original"}/>
             <ListMovie URL={Science_Fiction} title={"ScienceFiction movies"}/>
             <ListMovie URL={HorrorMovies} title={"Horror movies"}/>
@@ -29,10 +23,7 @@ const Home = ()=>{
             <ListMovie URL={War} title={"War movies"}/>
             <ListMovie URL={Western} title={"Western movies"}/>
             <ListMovie URL={History} title={"History movies"}/>
-
-            <ListMovie URL={Music} title={"Music"}/>
-            <ListMovie URL={Adventure} title={"Adventure movies"}/>
         </Fragment>
     )
 }
-export default Home;
+export default Movie;

@@ -5,8 +5,6 @@ import PlayButton from "./PlayButton";
 
 const BannerSlider = ({movie})=>{
 
-  console.log(movie);
-
     return(
        <Fragment>
            

@@ -1,0 +1,8 @@
+
+.view-movie{
+    height: 100vh;
+    background-image:linear-gradient(to left, rgba(15, 32, 39, 0.63), rgba(32, 58, 67, 0.938)),
+    url('https://pbs.twimg.com/media/FGxwKABVkAIiLu7?format=jpg&name=large');
+    background-size: cover;
+    
+}

@@ -31,16 +31,16 @@ const Navbar = ()=>{
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                          <li class="nav-item">
-                         {userName &&  <a class="nav-link active" aria-current="page" href="#">Home</a>}
+                         {userName &&   <Link class="nav-link" to="/">Home</Link>}
                         </li>
                         <li class="nav-item">
-                        {userName &&   <a class="nav-link" href="#">Movies</a>}
+                        {userName &&  <Link class="nav-link" to="/movie">Movies</Link>}
                         </li>
                         <li class="nav-item">
-                        {userName &&    <a class="nav-link" href="#">TV Shows</a>}
+                        {userName &&    <Link class="nav-link" to="/tvshow">TV Shows</Link>}
                         </li>
                         <li class="nav-item">
-                        {userName &&    <a class="nav-link" href="#">Favorite</a>}
+                        {userName &&    <a class="nav-link" href="#">Your Watchlist</a>}
                         </li>
                     </ul>
                     <div class="dropdown d-login">
