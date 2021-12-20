@@ -9,6 +9,7 @@ import "./ListMovie.css";
 const ListMovie = ({URL,title})=>{
 
     const [movie,setMovie] = useState([]);
+    const [showAlert,setShowAlert] = useState(false);
     const {view,setView} = useContext(viewMovieContext);
     const history = useHistory();
     
@@ -25,16 +26,20 @@ const ListMovie = ({URL,title})=>{
         history.push("/viewmovie")
     }
 
+    const addWatchListHandler = ()=>{
+
+    }
+
 
    let movies =  movie.map((item)=>{
         return(
            <div className="movie">
-                <span>prime</span>
+                <span className="prime">prime</span>
+                <span className="add-watch" onClick={()=>addWatchListHandler(item)}> <i class="fas fa-plus"> </i></span> 
                 <img src={IMG_URl+item.backdrop_path} alt="" onClick={()=>viewMovieHandler(item)}/>
             </div>
         ) 
     })
-    console.log(view);
     return(
        <div className="movies">
             <h4 className="title">{title}</h4>

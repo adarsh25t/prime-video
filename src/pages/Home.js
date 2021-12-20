@@ -2,6 +2,7 @@ import { Fragment } from "react"
 import Banner from "../components/Banner";
 import ListMovie from "../components/ListMovie";
 import WatchLaterMovies from "../components/WatchLaterMovies";
+import Footer from "../components/Footer";
 import { ActionMovies,HorrorMovies,RomanceMovies,
          ComedyMovies,Crime,Drama,Originals,Science_Fiction,Animation,
          Fantasy,Thriller,War,Western,History,Music,Adventure } from "../store/movieData";
@@ -32,6 +33,7 @@ const Home = ()=>{
 
             <ListMovie URL={Music} title={"Music"}/>
             <ListMovie URL={Adventure} title={"Adventure movies"}/>
+            <Footer/>
         </Fragment>
     )
 }

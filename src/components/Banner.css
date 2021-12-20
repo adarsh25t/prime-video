@@ -4,9 +4,6 @@
 }
 .carousel-inner{
     position: relative;
-    background: #0f2027; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .carousel-inner .carousel-caption{
     width: 95%;
@@ -15,9 +12,14 @@
     right: 2.4rem;
     text-align: start;
     display: flex;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap; 
 }
+.carousel-inner .carousel-item{
+    background-size: cover;
+}
+
+
+
 .carousel-text{
    margin: auto 0;
    width: 650px;

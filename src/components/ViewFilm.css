@@ -87,6 +87,34 @@
     margin-top: 10px;
 }
 
+.youtube{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background: #111c25;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width:1024px){
     .view-movie{
         height: 80vh;

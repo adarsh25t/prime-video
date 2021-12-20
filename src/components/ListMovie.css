@@ -31,14 +31,36 @@
     font-weight: bold;
 }
 
-.movie span{
+.movie .prime{
     position: absolute;
     left: 0;
     background-color: #00A8E1;
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
     font-weight: bold;
-    padding: 4px;
+    padding: 4px 5px;
     border-bottom-right-radius: 20px;
     color: black;
+    transition: 1s;
+}
+.movie .add-watch{
+    position: absolute;
+    right: -5px;
+    top: -35px;
+    color: rgb(150, 147, 147);
+    cursor: pointer;
+    background: #111c25;
+    padding: 7px 14px;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 0px;
+    transition: 1s;
+}
+.movie .add-watch i{
+    font-size: 14px;
+}
+.movie:hover .add-watch{
+    top: -5px;
+}
+.movie:hover .prime{
+    color: white;
 }

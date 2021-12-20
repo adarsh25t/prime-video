@@ -5,6 +5,14 @@ import PlayButton from "./PlayButton";
 
 const BannerSlider = ({movie})=>{
 
+    const bgClass_0 = `linear-gradient(to left, rgba(18, 42, 51, 0.692), rgba(16, 32, 37, 0.973)),
+                      url('${IMG_URl+movie[0].backdrop_path}')`;
+    const bgClass_1 = `linear-gradient(to left, rgba(18, 42, 51, 0.692), rgba(16, 32, 37, 0.973)),
+                      url('${IMG_URl+movie[1].backdrop_path}')`;  
+    const bgClass_2 = `linear-gradient(to left, rgba(18, 42, 51, 0.692), rgba(16, 32, 37, 0.973)),
+                      url('${IMG_URl+movie[2].backdrop_path}')`;                                   
+
+
     return(
        <Fragment>
            
@@ -15,7 +23,7 @@ const BannerSlider = ({movie})=>{
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" ></button>
                 </div>
             <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active" style={{backgroundImage:bgClass_0}}>
             <img  class="d-block w-100" alt="..."/> 
             <div class="carousel-caption ">
                     <div className="carousel-text">
@@ -25,11 +33,10 @@ const BannerSlider = ({movie})=>{
                         <PlayButton/>
                         <button className="wat-btn"> WATCH TRAILLER</button>
                     </div>
-                    <img src={IMG_URl+movie[0].backdrop_path} alt="" />
                 </div>
             </div>
 
-            <div class="carousel-item">
+            <div class="carousel-item" style={{backgroundImage:bgClass_1}}>
             <img  class="d-block w-100" alt="..."/> 
                 <div class="carousel-caption  ">
                     <div className="carousel-text">
@@ -39,10 +46,9 @@ const BannerSlider = ({movie})=>{
                     <PlayButton/>
                     <button className="wat-btn"> WATCH TRAILLER</button>
                   </div>
-                  <img src={IMG_URl+movie[1].backdrop_path} alt="" />
                 </div>
             </div>
-            <div class="carousel-item">
+            <div class="carousel-item" style={{backgroundImage:bgClass_2}}>
             <img  class="d-block w-100" alt="..."/> 
                 <div class="carousel-caption ">
                     <div className="carousel-text">
@@ -52,11 +58,9 @@ const BannerSlider = ({movie})=>{
                         <PlayButton/>
                         <button className="wat-btn"> WATCH TRAILLER</button>
                     </div>
-                    <   img src={IMG_URl+movie[2].backdrop_path} alt="" />
                 </div>
             </div>
-            </div>
-           
+        </div>
     </div>
        </Fragment>
 

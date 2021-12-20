@@ -18,6 +18,8 @@ const Banner = ()=>{
         setMovie(Data.results);
         setLoading(false);
     },[])
+
+    
     
     return(
         <Fragment>
