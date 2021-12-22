@@ -9,6 +9,7 @@ import BannerLogin from "./components/BannerLogin";
 import Movie from "./pages/Movie";
 import TvShow from "./pages/TvShow";
 import ViewMovie from "./pages/ViewMovie";
+import WatchList from "./pages/WatchList";
 
 
 function App() {
@@ -49,6 +50,10 @@ function App() {
 
         <Route path="/viewmovie">
           <ViewMovie/>
+        </Route>
+
+        <Route path="/watchlist">
+          <WatchList/>
         </Route>
 
       </Router>

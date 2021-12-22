@@ -1,0 +1,18 @@
+.watchlist-wrapper{
+    background-color: #111c25;
+    height: auto;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+.watchlist-movies{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.watchlist-movies img{
+    width: 400px;
+    height: 300px;
+    object-fit: contain;
+    margin-left: 20px;
+    border-radius: 5px;
+}

@@ -40,7 +40,7 @@ const Navbar = ()=>{
                         {userName &&    <Link class="nav-link" to="/tvshow">TV Shows</Link>}
                         </li>
                         <li class="nav-item">
-                        {userName &&    <a class="nav-link" href="#">Your Watchlist</a>}
+                        {userName &&    <Link class="nav-link" to="/watchlist">Your Watchlist</Link>}
                         </li>
                     </ul>
                     <div class="dropdown d-login">

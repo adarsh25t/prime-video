@@ -3,6 +3,7 @@ import { useContext, useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 import { viewMovieContext } from "../store/movieContext";
 import { IMG_URl } from "../store/movieData";
+import { watchListContext } from "../store/watchListContext";
 import "./ListMovie.css";
 
 
@@ -13,6 +14,7 @@ const ListMovie = ({URL,title})=>{
     const {view,setView} = useContext(viewMovieContext);
     const history = useHistory();
     
+    const {watchlists,setwatchlist} = useContext(watchListContext);
 
     useEffect(async() => {
         const API_URL = URL;
@@ -26,17 +28,29 @@ const ListMovie = ({URL,title})=>{
         history.push("/viewmovie")
     }
 
-    const addWatchListHandler = ()=>{
+    const addWatchListHandler = (item)=>{
 
+        setwatchlist((prev)=>{
+                return[
+                    ...prev,item
+                ]
+            })
+        
     }
-
+   
 
    let movies =  movie.map((item)=>{
         return(
            <div className="movie">
                 <span className="prime">prime</span>
-                <span className="add-watch" onClick={()=>addWatchListHandler(item)}> <i class="fas fa-plus"> </i></span> 
-                <img src={IMG_URl+item.backdrop_path} alt="" onClick={()=>viewMovieHandler(item)}/>
+                <div className="add-watch"> 
+                    <div className="view-icons">
+                        <i class="fas fa-play" onClick={()=>viewMovieHandler(item)}></i>
+                        <i class="fas fa-plus" onClick={()=>addWatchListHandler(item)}> </i>
+                    </div>
+                    <h5>{item.title ? item.title : item.name}</h5>
+                </div> 
+                <img src={IMG_URl+item.backdrop_path} alt="" />
             </div>
         ) 
     })
