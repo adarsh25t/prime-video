@@ -14,6 +14,7 @@ const Home = ()=>{
     return(
         <Fragment>
             <Banner/>
+            <ListMovie/>
             <WatchLaterMovies/>
             <ListMovie URL={ActionMovies} title={"Recommended movies"}/>
             <ListMovie URL={Originals} title={"Amazon Original"}/>
