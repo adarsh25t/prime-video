@@ -66,237 +66,103 @@
     border: none;
     outline: none;
     color: white;
+    font-size: .8rem
 }
 
 
 .carousel-indicators button{
-    width: .6rem !important;
-    height: .6rem !important;
+    width: .9rem !important;
+    height: .9rem !important;
     border-radius: 50% !important;
     margin-left: 10px !important;
     background-color: #00A8E1 !important;
     
 }
 .carousel-indicators button.active{
-    background-color: crimson !important;
+    background-color: rgba(168, 168, 168, 0.87) !important;
 }
 
 
 @media (max-width:1280px){
-    .carousel-inner .carousel-caption{
-        width: 99%;
-    }
-    .carousel-caption img{
-        width: 550px;
-    }
-    .carousel-indicators{
-        bottom: 60px;
-    }
+   
 }
 
 @media (max-width:1150px){
-    .carousel-inner .carousel-caption{
-        width: 99%;
-    }
-    .carousel-caption img{
-        width: 420px;
-        height: 350px;
-    }
-    .carousel-indicators{
-        bottom: 0px;
-    }
+    
 }
 
 
 @media (max-width:1024px){
-    .carousel-inner .carousel-caption{
-        width: 99%;
-    }
-    .carousel-caption img{
-        width: 93%;
-        height: auto;
-        margin-top: -50px;
-    }
-    .carousel-indicators{
-        bottom: 100px;
-    }
-    .carousel-text{
-        width: 100%;
-    }
-    .carousel-text h5{
-        font-size: 3.6rem;
-    }
-    .carousel-text p{
-        font-size: 2rem;
-    }
-    .wat-btn{
-        font-size: 22px;
-     }
+   
 }
 
 @media (max-width:941px){
-    .carousel-inner .carousel-caption{
-        width: 100%;
-    }
-    .carousel-caption img{
-        width: 400px;
-        height: 300px;
-    }
-    .carousel-indicators{
-        bottom: 0px;
-    }
-    .carousel-caption h5{
-        font-size: 1rem;
-    }
-    .carousel-text{
-        width: 450px;
-    }
-    .carousel-caption p{
-        width: 100%;
-        font-size: 13px;
-        width: 90%;
-    }
-    .wat-btn{
-       font-size: 13px;
-    }
+    
 }
 
-@media (max-width:768px){
-    .carousel-inner .carousel-caption{
-        width: 99%;
-    }
-    .carousel-caption img{
-        width: 93%;
-        height: auto;
-        margin-top: 0px;
-    }
-    .carousel-indicators{
-        bottom: 30px;
-    }
-    .carousel-text{
-        width: 100%;
-    }
+@media screen and (max-width:768px){
     .carousel-text h5{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .carousel-text p{
         font-size: 1.5rem;
     }
-    .wat-btn{
-        font-size: 22px;
-     }
+    .carousel-item{
+        background-position: top center;
+    }
+    
 }
 
-@media (max-width:540px){
-    .carousel-inner .carousel-caption{
-        width: 99%;
-    }
-    .carousel-caption img{
-        width: 87%;
-        height: auto;
-        margin-top: 0px;
-    }
-    .carousel-indicators{
-        bottom: 0px;
-    }
-    .carousel-text{
-        width: 100%;
-    }
+@media screen and (max-width:540px){
+   
+}
+
+
+@media screen and (max-width:414px){
     .carousel-text h5{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .carousel-text p{
         font-size: 1rem;
     }
-    .wat-btn{
-        font-size: 15px;
-     }
+    .carousel-item{
+        background-position: top center;
+    }
 }
 
-@media (max-width:411px){
-    .carousel-inner .carousel-caption{
-        width: 99%;
-    }
-    .carousel-caption img{
-        width: 87%;
-        height: auto;
-        margin-top: 0px;
-    }
-    .carousel-indicators{
-        bottom: 0px;
-    }
-    .carousel-text{
-        width: 100%;
-    }
+
+@media screen and (max-width:411px){
     .carousel-text h5{
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
     .carousel-text p{
-        font-size: 1rem;
-        height: auto;
+        font-size: .8rem;
     }
-    .wat-btn{
-        font-size: 15px;
-     }
+    .carousel-item{
+        background-position: top center;
+    }
+}
+@media screen and (max-width:375px){
+    .carousel-item{
+        background-position: top center;
+    }
 }
 
 
-@media (max-width:360px){
-    .carousel-inner .carousel-caption{
-        width: 99%;
-    }
-    .carousel-caption img{
-        width: 87%;
-        height: auto;
-        margin-top: 0px;
-        margin-left: -10px;
-    }
-    .carousel-indicators{
-        bottom: 0px;
-    }
-    .carousel-text{
-        width: 100%;
-    }
+@media screen and (max-width:360px){
     .carousel-text h5{
-        width: 95%;
-        font-size: 1.6rem;
+        font-size: 1.3rem;
     }
     .carousel-text p{
-        font-size: .6rem;
-        height: auto;
+        font-size: .8rem;
     }
-    .wat-btn{
-        font-size: 12px;
-}
+    .carousel-item{
+        background-position: top center;
+    }
 }
 
 
-@media (max-width:320px){
-    .carousel-inner .carousel-caption{
-        width: 99%;
-    }
-    .carousel-caption img{
-        width: 87%;
-        height: auto;
-        margin-top: 0px;
-        margin-left: -15px;
-    }
-    .carousel-indicators{
-        bottom: 0px;
-    }
-    .carousel-text{
-        width: 100%;
-    }
-    .carousel-text h5{
-        width: 85%;
-        font-size: 1.2rem;
-    }
-    .carousel-text p{
-        width: 85%;
-        font-size: .6rem;
-        height: auto;
-    }
-    .wat-btn{
-        font-size: 10px;
-}
+@media screen and (max-width:320px){
+   
+  
 }

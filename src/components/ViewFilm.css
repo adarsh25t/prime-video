@@ -255,119 +255,45 @@
 
 
 @media (max-width:414px){
-    
-    .view-details .view-title{
-        font-size: 1.3rem;
-    }
-    .view-details{
-        padding-top: 100px;
-    }
-    .view-details .date{
-        border: 1px solid #c9c9c9;
-        padding: 5px;
-        font-size: 13px;
-    }
-    .view-details .rate{
-        border: 1px solid #c9c9c9;
-        padding: 5px;
-        margin-left: 25px;
-        font-size: 13px;
-    }
-    .view-details .view-paragraph{
-        width: 85%;
-        font-size: 15px;
-        height: 70px;
-    }
-    .view-details .fas{
-        font-size: 12px;
-    }
-    .view-details .actions{
-        font-size: 14px;
+    .view-movie{
+        background-position: top center;
+        height: auto;
     }
     .casts{
-        width: 250px;
+        width: 80%;
     }
-    .casts .cast{
-        margin-left: 10px;
+   
+    .cast h4{
+        font-size: .6rem;
     }
-
+   
 }
 
 @media (max-width:411px){
-    
-    .view-details .view-title{
-        font-size: 1.3rem;
-    }
-    .view-details{
-        padding-top: 100px;
-    }
-    .view-details .date{
-        border: 1px solid #c9c9c9;
-        padding: 5px;
-        font-size: 13px;
-    }
-    .view-details .rate{
-        border: 1px solid #c9c9c9;
-        padding: 5px;
-        margin-left: 25px;
-        font-size: 13px;
-    }
-    .view-details .view-paragraph{
-        width: 85%;
-        font-size: 15px;
-        height: 80px;
-    }
-    .view-details .fas{
-        font-size: 12px;
-    }
-    .view-details .actions{
-        font-size: 14px;
+    .view-movie{
+        background-position: top center;
     }
     .casts{
-        width: 200px;
+        width: 80%;
     }
-    .casts .cast{
-        margin-left: 10px;
+   
+    .cast h4{
+        font-size: .6rem;
     }
-
 }
 
 
 @media (max-width:375px){
-    
-    .view-details .view-title{
-        font-size: 1.3rem;
-    }
-    .view-details{
-        padding-top: 100px;
-    }
-    .view-details .date{
-        border: 1px solid #c9c9c9;
-        padding: 5px;
-        font-size: 13px;
-    }
-    .view-details .rate{
-        border: 1px solid #c9c9c9;
-        padding: 5px;
-        margin-left: 25px;
-        font-size: 13px;
-    }
-    .view-details .view-paragraph{
-        width: 85%;
-        font-size: 15px;
-        height: 85px;
-    }
-    .view-details .fas{
-        font-size: 12px;
-    }
-    .view-details .actions{
-        font-size: 14px;
+    .view-movie{
+        background-position: top center;
+        
     }
     .casts{
-        width: 200px;
+        width: 80%;
     }
-    .casts .cast{
-        margin-left: 10px;
+   
+    .cast h4{
+        font-size: .7rem;
     }
 
 }
@@ -375,83 +301,31 @@
 
 
 @media (max-width:360px){
-    .view-details .view-title{
-        font-size: 1.3rem;
-    }
-    .view-details .date{
-        border: 1px solid #c9c9c9;
-        padding: 5px;
-        font-size: 13px;
-    }
-    .view-details .rate{
-        border: 1px solid #c9c9c9;
-        padding: 5px;
-        margin-left: 25px;
-        font-size: 13px;
-    }
-    .view-details .view-paragraph{
-        width: 85%;
-        font-size: 15px;
-        height: 85px;
-    }
-    .view-details .fas{
-        font-size: 12px;
-    }
-    .view-details .actions{
-        font-size: 14px;
+    .view-movie{
+        background-position: top center;
+        height: auto;
     }
     .casts{
-        width: 250px;
+        width: 80%;
     }
-    .casts .cast{
-        margin-left: 10px;
+   
+    .cast h4{
+        font-size: .6rem;
     }
-
 }
 
 @media (max-width:320px){
-    
-    .view-details .view-title{
-        font-size: .8rem;
-    }
-    .view-details{
-        padding-top: 100px;
-    }
-    .view-details .date{
-        border: 1px solid #c9c9c9;
-        padding: 5px;
-        font-size: 11px;
-    }
-    .view-details .rate{
-        border: 1px solid #c9c9c9;
-        padding: 5px;
-        margin-left: 25px;
-        font-size: 11px;
-    }
-    .view-details .view-paragraph{
-        width: 85%;
-        font-size: 15px;
-        height: 50px;
-    }
-    .view-details .fas{
-        font-size: 12px;
-    }
-    .view-details .actions{
-        font-size: 14px;
+    .view-movie{
+        background-position: top center;
+        height: auto;
     }
     .casts{
-        width: 200px;
-        height: 150px;
+        width: 80%;
     }
-    .casts .cast{
-        margin-left: 10px;
-        height: 150px;
-    }
-    .cast img{
-        width: 100px;
-    }
+   
     .cast h4{
-        font-size: 1.5rem;
-    }
-
+        font-size: .6rem;
+    }   
+    
+   
 }

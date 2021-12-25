@@ -27,8 +27,10 @@ const Login = ()=>{
 
     return(
         <Fragment>
-            <form action="" className="register" onSubmit={submitHandler}>
-                <img src="https://logodownload.org/wp-content/uploads/2018/07/prime-video-logo-0.png" alt="" />
+            <div className="banner-login-1">
+                <div className="shadow"></div>
+                <form action="" className="register" onSubmit={submitHandler}>
+                <img src="https://logodownload.org/wp-content/uploads/2018/07/prime-video-1.png" alt="" />
                 <input  type="email" 
                         placeholder="Enter Email" 
                         className="form-control"
@@ -46,6 +48,7 @@ const Login = ()=>{
                 <input type="submit"  value="Sigin In Your Prime Account"/>
                 <Link to="/register" className="link">Create your Prime video account </Link>
             </form>
+            </div>
         </Fragment>
     )
 }

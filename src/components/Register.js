@@ -28,8 +28,10 @@ const Register = ()=>{
 
     return(
         <Fragment>
-            <form action="" className="register" onSubmit={submitHandler}>
-                <img src="https://logodownload.org/wp-content/uploads/2018/07/prime-video-logo-0.png" alt="" />
+            <div className="banner-login-1">
+                <div className="shadow"></div>
+                <form action="" className="register" onSubmit={submitHandler}>
+                <img src="https://logodownload.org/wp-content/uploads/2018/07/prime-video-1.png" alt="" />
                 <input  type="text" 
                         placeholder="Enter Name" 
                         className="form-control"
@@ -51,6 +53,7 @@ const Register = ()=>{
                 <input type="submit"  value="Create Your Prime Account"/>
                 <Link to="/login" className="link">Already have an account? Sign-In </Link>
             </form>
+            </div>
         </Fragment>
     )
 }
