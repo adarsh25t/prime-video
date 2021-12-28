@@ -7,7 +7,7 @@ import YouTube from "react-youtube";
 const ViewMovie = ()=>{
 
     const [urlId,setUrlId] = useState("");
-    const [closeYoutube,setCloseYoutube] = useState(true);
+    const [closeYoutube,setCloseYoutube] = useState(false);
 
     const WatchTrailler = (movieId)=>{
         setCloseYoutube(true);
@@ -30,7 +30,7 @@ const ViewMovie = ()=>{
 
     return(
         <Fragment>
-            <ViewFilm WatchTrailler={WatchTrailler} setUrlId={setUrlId}/>
+            { closeYoutube ? "" : <ViewFilm WatchTrailler={WatchTrailler} setUrlId={setUrlId}/>}
             {urlId && closeYoutube && <div className="youtube">
                 <i class="fas fa-plus" onClick={closeHandler}></i>
                 <YouTube videoId={urlId} opts={opts}/>

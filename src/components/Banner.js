@@ -1,14 +1,16 @@
-import { Fragment ,useEffect,useState} from "react";
+import { Fragment ,useEffect,useState,useContext} from "react";
 import './Banner.css';
 import BannerSlider from "./BannerSlider";
 import { API_KEY, baseUrl ,} from "../store/movieData";
-
+import { useHistory } from "react-router-dom";
+import { viewMovieContext } from "../store/movieContext";
 
 const Banner = ()=>{
 
     const [loading,setLoading] = useState(false);
     const [movie,setMovie] = useState();
-
+    const {view,setView} = useContext(viewMovieContext);
+    const history = useHistory();
 
     useEffect(async()=>{
         setLoading(true);
@@ -19,11 +21,14 @@ const Banner = ()=>{
         setLoading(false);
     },[])
 
-    
+    const viewMovieHandler = (item)=>{
+        setView(item);
+        history.push("/viewmovie")
+    }
     
     return(
         <Fragment>
-            {movie && !loading ? <BannerSlider movie={movie}/> : ""}
+            {movie && !loading ? <BannerSlider movie={movie} viewMovieHandler={viewMovieHandler}/> : ""}
         </Fragment>
     )
 }

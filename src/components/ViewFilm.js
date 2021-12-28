@@ -9,6 +9,7 @@ const ViewFilm = ({WatchTrailler})=>{
     const [cast,setCast] = useState([]);
     const {view} = useContext(viewMovieContext);
     const {setwatchlist} = useContext(watchListContext);
+    
 
     useEffect(async()=>{
         const API_VIEW = `${baseUrl}/movie/${view.id}/credits?api_key=${API_KEY}&language=en-US`;
@@ -36,6 +37,8 @@ const ViewFilm = ({WatchTrailler})=>{
             ]
         })
     }
+
+    
 
   
     const bgClass = `linear-gradient(to left, rgba(15, 32, 39, 0.63), rgba(32, 58, 67, 0.938)),

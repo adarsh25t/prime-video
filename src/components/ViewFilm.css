@@ -88,7 +88,7 @@
 }
 
 .youtube{
-    position: absolute;
+    position: relative;
     left: 0;
     bottom: 0;
     right: 0;
@@ -101,7 +101,17 @@
 }
 
 
-
+.youtube .fa-plus{
+    position: absolute;
+    right: 21.2rem;
+    top: 0rem;
+    color: rgb(145, 0, 0);
+    background-color: rgba(168, 168, 167, 0.13);
+    padding: 10px;
+    border-radius: 20%;
+    cursor: pointer;
+    z-index: 1000;
+}
 
 
 

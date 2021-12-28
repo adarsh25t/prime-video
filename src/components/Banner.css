@@ -1,13 +1,14 @@
 .carousel-inner img{
-    height: 100vh;
+    height: 60vh;
     background-size: cover;
 }
 .carousel-inner{
     position: relative;
+    
 }
 .carousel-inner .carousel-caption{
     width: 95%;
-    top: 5.5rem;
+    top: .5rem;
     left: 2.4rem;
     right: 2.4rem;
     text-align: start;
@@ -17,7 +18,9 @@
 .carousel-inner .carousel-item{
     background-size: cover;
 }
-
+.carousel-item img{
+    border: 5px solid white;
+}
 
 
 .carousel-text{
@@ -25,7 +28,7 @@
    width: 650px;
 }
 .carousel-text h5{
-    font-size: 2.8rem;
+    font-size: 2rem;
     z-index: 10001;
     color: rgb(219, 219, 219);
     font-family: 'Poppins', sans-serif;
@@ -46,7 +49,8 @@
     width: 90%;
     text-align: start;
     font-family: 'Poppins', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
+    font-size: .9rem;
 }
 .carousel-caption img{
     width: 600px;
@@ -71,8 +75,8 @@
 
 
 .carousel-indicators button{
-    width: .9rem !important;
-    height: .9rem !important;
+    width: .7rem !important;
+    height: .7rem !important;
     border-radius: 50% !important;
     margin-left: 10px !important;
     background-color: #00A8E1 !important;
@@ -114,16 +118,24 @@
 }
 
 @media screen and (max-width:540px){
-   
+    .carousel-text h5{
+        font-size: 1.2rem;
+    }
+    .carousel-text p{
+        font-size: .9rem;
+    }
+    .carousel-item{
+        background-position: top center;
+    }
 }
 
 
 @media screen and (max-width:414px){
     .carousel-text h5{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .carousel-text p{
-        font-size: 1rem;
+        font-size: .9rem;
     }
     .carousel-item{
         background-position: top center;
@@ -154,7 +166,7 @@
         font-size: 1.3rem;
     }
     .carousel-text p{
-        font-size: .8rem;
+        font-size: .7rem;
     }
     .carousel-item{
         background-position: top center;
@@ -163,6 +175,13 @@
 
 
 @media screen and (max-width:320px){
-   
-  
+    .carousel-text h5{
+        font-size: .9rem;
+    }
+    .carousel-text p{
+        font-size: .6rem;
+    }
+    .carousel-text .span{
+        font-size: 10px;
+    }
 }

@@ -7,10 +7,9 @@ import { watchListContext } from "../store/watchListContext";
 import "./ListMovie.css";
 
 
-const ListMovie = ({URL,title})=>{
+const ListMovie = ({URL,title,showAlert})=>{
 
     const [movie,setMovie] = useState([]);
-    const [showAlert,setShowAlert] = useState(false);
     const {view,setView} = useContext(viewMovieContext);
     const history = useHistory();
     
@@ -29,13 +28,11 @@ const ListMovie = ({URL,title})=>{
     }
 
     const addWatchListHandler = (item)=>{
-
         setwatchlist((prev)=>{
                 return[
                     ...prev,item
                 ]
             })
-        
     }
    
 

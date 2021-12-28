@@ -1,7 +1,7 @@
 .banner-login-1{
     display: flex;
     flex-wrap: wrap;
-    height: auto;
+    height: 100vh;
     position: relative;
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOIjRSUxHhQX4WMyFJQuromQ3UQx-dRWSYhiosEPuG2jVvjZWwK_bWcVT6EsH6YtyvO0A&usqp=CAU');
 }
