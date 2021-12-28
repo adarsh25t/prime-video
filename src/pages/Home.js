@@ -1,4 +1,4 @@
-import { Fragment } from "react"
+import { Fragment, useContext} from "react"
 import Banner from "../components/Banner";
 import ListMovie from "../components/ListMovie";
 import WatchLaterMovies from "../components/WatchLaterMovies";
@@ -6,14 +6,18 @@ import Footer from "../components/Footer";
 import { ActionMovies,HorrorMovies,RomanceMovies,
          ComedyMovies,Crime,Drama,Originals,Science_Fiction,Animation,
          Fantasy,Thriller,War,Western,History,Music,Adventure } from "../store/movieData";
+import { navbarContext } from "../store/navbarContext";
+
 
 
 const Home = ()=>{
    
+    const {navShow,setNavShow} = useContext(navbarContext);
 
     return(
         <Fragment>
-            <Banner/>
+          { navShow ? "": <div>
+           <Banner/>
             <ListMovie/>
             <WatchLaterMovies/>
             <ListMovie URL={ActionMovies} title={"Recommended movies"}/>
@@ -35,6 +39,7 @@ const Home = ()=>{
             <ListMovie URL={Music} title={"Music"}/>
             <ListMovie URL={Adventure} title={"Adventure movies"}/>
             <Footer/>
+           </div>}
         </Fragment>
     )
 }

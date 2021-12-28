@@ -3,13 +3,14 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Register from "./components/Register";
 import Login from "./components/Login";
-import NavBar from './components/NavBar'
 import { authContext, firebaseContext } from "./store/context";
 import BannerLogin from "./components/BannerLogin";
 import Movie from "./pages/Movie";
 import TvShow from "./pages/TvShow";
 import ViewMovie from "./pages/ViewMovie";
 import WatchList from "./pages/WatchList";
+import Navbar from "./components/Navbar";
+import { navbarContext } from "./store/navbarContext";
 
 
 function App() {
@@ -27,7 +28,8 @@ function App() {
   return (
     <div>
      <Router>
-        <NavBar/>
+       
+        <Navbar/>
         <Route exact path="/">
           {userName ? <Home /> : <BannerLogin/>}
         </Route>
