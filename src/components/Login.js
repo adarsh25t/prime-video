@@ -8,13 +8,12 @@ const Login = ()=>{
 
     const [Email,setEmail] = useState('');
     const [Password,setPassword] = useState('');
+    const history = useHistory();
 
     const {firebase} = useContext(firebaseContext);
-    const history = useHistory();
 
     const submitHandler = (e)=>{
         e.preventDefault();
-
         firebase.auth().signInWithEmailAndPassword(Email,Password).then(result=>{
             history.push("/");
         }).catch(error=>{

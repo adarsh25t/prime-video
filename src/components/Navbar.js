@@ -6,10 +6,11 @@ import { navbarContext } from "../store/navbarContext";
 import "./Navbar.css";
 const Navbar = () => {
     const [active, setActive] = useState(false);
+    const history = useHistory();
+    
     const {firebase} = useContext(firebaseContext);
     const {userName} = useContext(authContext);
     const {navShow,setNavShow} = useContext(navbarContext);
-    const history = useHistory()
 
   const handleClick = () => {
     setActive(!active);

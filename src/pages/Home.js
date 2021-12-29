@@ -1,31 +1,23 @@
-import { Fragment, useContext, useState} from "react"
+import { Fragment, useContext} from "react"
 import Banner from "../components/Banner";
 import ListMovie from "../components/ListMovie";
 import WatchLaterMovies from "../components/WatchLaterMovies";
+import { navbarContext } from "../store/navbarContext";
 import Footer from "../components/Footer";
 import { ActionMovies,HorrorMovies,RomanceMovies,
-         ComedyMovies,Crime,Drama,Originals,Science_Fiction,Animation,
-         Fantasy,Thriller,War,Western,History,Music,Adventure } from "../store/movieData";
-import { navbarContext } from "../store/navbarContext";
-
+        ComedyMovies,Crime,Drama,Originals,Science_Fiction,Animation,
+        Fantasy,Thriller,War,Western,History,Music,Adventure } from "../store/movieData";
 
 
 const Home = ()=>{
-   
     const {navShow} = useContext(navbarContext);
-    const [alert,setAlert] = useState(false);
-
-    const showAlert = ()=>{
-        setAlert(true);
-    }
-
     return(
         <Fragment>
           { navShow ? "": <div>
            <Banner/>
             <ListMovie/>
             <WatchLaterMovies/>
-            <ListMovie URL={ActionMovies} title={"Recommended movies"} showAlert={showAlert}/>
+            <ListMovie URL={ActionMovies} title={"Recommended movies"}/>
             <ListMovie URL={Originals} title={"Amazon Original"}/>
             <ListMovie URL={Science_Fiction} title={"ScienceFiction movies"}/>
             <ListMovie URL={HorrorMovies} title={"Horror movies"}/>

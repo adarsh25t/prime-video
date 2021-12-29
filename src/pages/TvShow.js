@@ -2,7 +2,6 @@ import { Fragment } from "react";
 import ListMovie from "../components/ListMovie";
 import { Action_Adventure,Reality,Talk,Crime_,Kids,News,Sci_Fi_Fantasy,Soap,War_Politics } from "../store/movieData";
 
-
 const TvShow = ()=>{
     return(
         <Fragment>

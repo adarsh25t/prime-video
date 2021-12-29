@@ -6,7 +6,7 @@ import './PlayButton.css'
 const PlayButton = ({item})=>{
 
     const history = useHistory();
-    const {view,setView} = useContext(viewMovieContext);
+    const {setView} = useContext(viewMovieContext);
 
     const viewMovieHandler = (item)=>{
         setView(item);

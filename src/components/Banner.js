@@ -1,7 +1,7 @@
 import { Fragment ,useEffect,useState,useContext} from "react";
 import './Banner.css';
 import BannerSlider from "./BannerSlider";
-import { API_KEY, baseUrl ,} from "../store/movieData";
+import { API_KEY, baseUrl} from "../store/movieData";
 import { useHistory } from "react-router-dom";
 import { viewMovieContext } from "../store/movieContext";
 
@@ -9,8 +9,8 @@ const Banner = ()=>{
 
     const [loading,setLoading] = useState(false);
     const [movie,setMovie] = useState();
-    const {view,setView} = useContext(viewMovieContext);
     const history = useHistory();
+    const {setView} = useContext(viewMovieContext);
 
     useEffect(async()=>{
         setLoading(true);

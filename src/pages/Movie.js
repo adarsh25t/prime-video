@@ -1,8 +1,8 @@
 import { Fragment } from "react";
 import ListMovie from "../components/ListMovie";
 import { ActionMovies,HorrorMovies,RomanceMovies,
-    ComedyMovies,Crime,Drama,Originals,Science_Fiction,Animation,
-    Fantasy,Thriller,War,Western,History } from "../store/movieData";
+        ComedyMovies,Crime,Drama,Originals,Science_Fiction,Animation,
+        Fantasy,Thriller,War,Western,History } from "../store/movieData";
 
 
 const Movie = ()=>{

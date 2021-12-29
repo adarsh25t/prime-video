@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { useContext } from 'react/cjs/react.development';
 import { viewMovieContext } from '../store/movieContext';
@@ -8,14 +7,14 @@ import './WatchLaterMovies.css';
 
 const WatchLaterMovies = ()=>{
 
-    const {watchlists,setwatchlist} = useContext(watchListContext);
-    const {view,setView} = useContext(viewMovieContext);
     const history = useHistory();
+    const {watchlists,setwatchlist} = useContext(watchListContext);
+    const {setView} = useContext(viewMovieContext);
    
 
     const viewMovieHandler = (item)=>{
-            setView(item);
-            history.push("/viewmovie")
+        setView(item);
+        history.push("/viewmovie")
     }
 
     const removeWatchListHandler = (item)=>{
@@ -25,7 +24,7 @@ const WatchLaterMovies = ()=>{
         setwatchlist(deletedMovie);
     }
     
-  const watchMovie = watchlists.map((item)=>{
+    const watchMovie = watchlists.map((item)=>{
         return(
             <div className="movie">
             <span className="prime">prime</span>
@@ -37,11 +36,9 @@ const WatchLaterMovies = ()=>{
                 <h5>{item.title ? item.title : item.name}</h5>
             </div> 
             <img src={IMG_URl+item.backdrop_path} alt="" />
-        </div>
-        )
+        </div>)
     })
 
-    
 
     return(
         <div className="watchlater">

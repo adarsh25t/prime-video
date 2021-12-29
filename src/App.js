@@ -10,14 +10,15 @@ import TvShow from "./pages/TvShow";
 import ViewMovie from "./pages/ViewMovie";
 import WatchList from "./pages/WatchList";
 import Navbar from "./components/Navbar";
-import { navbarContext } from "./store/navbarContext";
+
 
 
 function App() {
 
  const {firebase} = useContext(firebaseContext);
  const {userName,setuserName} = useContext(authContext);
- 
+
+
  useEffect(()=>{
   firebase.auth().onAuthStateChanged((user) => {
     setuserName(user);
@@ -28,7 +29,6 @@ function App() {
   return (
     <div>
      <Router>
-       
         <Navbar/>
         <Route exact path="/">
           {userName ? <Home /> : <BannerLogin/>}

@@ -1,4 +1,3 @@
-
 import { useContext, useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 import { viewMovieContext } from "../store/movieContext";
@@ -7,13 +6,13 @@ import { watchListContext } from "../store/watchListContext";
 import "./ListMovie.css";
 
 
-const ListMovie = ({URL,title,showAlert})=>{
+const ListMovie = ({URL,title})=>{
 
     const [movie,setMovie] = useState([]);
-    const {view,setView} = useContext(viewMovieContext);
+    const {setView} = useContext(viewMovieContext);
     const history = useHistory();
     
-    const {watchlists,setwatchlist} = useContext(watchListContext);
+    const {setwatchlist} = useContext(watchListContext);
 
     useEffect(async() => {
         const API_URL = URL;
@@ -33,10 +32,12 @@ const ListMovie = ({URL,title,showAlert})=>{
                     ...prev,item
                 ]
             })
+        
     }
    
 
    let movies =  movie.map((item)=>{
+
         return(
            <div className="movie">
                 <span className="prime">prime</span>

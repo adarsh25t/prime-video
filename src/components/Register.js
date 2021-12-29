@@ -8,13 +8,12 @@ const Register = ()=>{
     const [Name,setName] = useState('');
     const [Email,setEmail] = useState('');
     const [Password,setPassword] = useState('');
+    const history = useHistory();
 
     const {firebase} = useContext(firebaseContext);
-    const history = useHistory();
     
     const submitHandler = (e)=>{
         e.preventDefault();
-
         firebase.auth().createUserWithEmailAndPassword(Email,Password).then(result=>{
             result.user.updateProfile({displayName:Name}).then(()=>{
                 history.push('/login')
